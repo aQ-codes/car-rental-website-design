@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:root{
+    --black : #000000;
+    --white : #FFFFFF;
+    --color3: #009046;
+    --color4: #E21E26;
+    --color5: #F8F8F8;
+}
+
+.booking-section {
+    background-image: url('../images/background_red.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+section{
+    background-color: aquamarine;
+    padding :0px 64px;
+}
+
+
+
