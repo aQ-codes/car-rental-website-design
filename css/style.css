@@ -183,7 +183,6 @@ main .container{
     margin-bottom: 8px;
 }
 
-
 .filter,
 .loc-time-search,
 .dwnld-app{
@@ -574,8 +573,6 @@ main .container{
 }
 
 
-
-
 /* how to rent section  */
 
 #rent-container {
@@ -655,7 +652,6 @@ main .container{
     padding: 56px;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    /* font-weight: 600; */
     margin-bottom: 56px;
 }
 
@@ -670,6 +666,8 @@ main .container{
 #location-section .locations-list{
     display: flex;
     justify-content: space-between;
+
+    flex-wrap: wrap;
     padding: 0px 90px;
     margin-bottom: 56px;
 }
@@ -685,22 +683,16 @@ main .container{
     opacity: 80%;
 }
 
-/* .location-item {
+.location-item {
     position: relative;
-} */
+}
 
-/* .location-item::before {
-    content: '';
-    position: absolute;
-    left: -32px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 22px; 
-    height: 28px; 
-    background: url('../icons/location2.svg') no-repeat center center;
-    background-size: contain;
-} */
-
+#location-section .location-list span.bar{
+    height: 41px;
+    width: 1px;
+    background-color: var(--white);
+    opacity: 20%;
+}
 
 
 
@@ -1255,17 +1247,27 @@ main .container{
     width:100px;
 }
 
-
-
-
-/* #newsletter-section .part2 .app-image img{
-    width: 100%;
+/* rent a car section  */
+#rent-container .heading h1{
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin-left: 16px;
 }
 
-#newsletter-section .part2 p{
-    font-size: 12px;
+#rent-container .row{
+    flex-direction: column;
+    padding:0px 16px;
+}
 
-} */
+.box {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 
 
 
