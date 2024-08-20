@@ -303,46 +303,75 @@ main .container{
 }
 
 
-
 /* slider section  */
 
+.slider-section{
+    background-color: aqua;
+    height: 405px;
+}
+
 .slider-container{
+    background-color: #E21E26;
     position: relative;
     font-size: 18px;
     font-weight: 400;
+    height: 100%;
+    width: 100%;
+}
+
+.image-slider{
+    background-color: #009046;
+    height: 100%;
+    width: 100%;
+
 }
 
 .image-slider img{
-    width: 100%;
+    width: 100%; 
+    height: 100%;
     object-fit: cover;
 }
 
 .overlay {
     position: absolute;
-    top: 65%; /* Position vertically centered */
+    top: 75%; /* Position vertically centered */
     left: 50%; /* Position horizontally centered */
     transform: translate(-50%, -50%);
     color:var(--white); 
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+
+
 }
 
 .overlay .btn{
     display: inline-block;
     color: var(--white);
     font-size: 15px;
+    font-weight: 600px;
     background-color: var(--color3);
     width: 144px;
     padding: 4px;
     text-align: center;
 }
- 
+
+.overlay div{
+    text-align: center;
+    width: 60px;
+    height: 9px;
+}
+
+.overlay div img{
+    width: 100%;
+
+}
 
 /* popular cars section  */
+
 .popular-cars{
     margin-bottom:40px ;
-}
-.cards-container{
-    display: flex;
-    gap: 24px;
 }
 
 .popular-cars .heading h1{
@@ -350,6 +379,11 @@ main .container{
     font-weight: 400;
     text-align: center;
     font-size: 34px;
+}
+
+.cards-container{
+    display: flex;
+    gap: 24px;
 }
 
 .card {
@@ -360,6 +394,7 @@ main .container{
     height: 290px;
     width: 754px;
 }
+
 .card .c-img {
     width: 360px;
     object-fit: cover;
@@ -382,7 +417,7 @@ main .container{
 
 .card-content ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     font-size: 11px;
     font-weight: 500;
@@ -418,20 +453,16 @@ main .container{
     width: 100%;
     display: flex;
 }
-.part1, .part2 {
-    flex: 1;
-}
 
-.part1{
+#newsletter-section .main-container .part1{
     flex: 1 1 50%;
-    /* background-color: #f6f4f4; */
     padding:40px 78px;
 }
 
-.part2{
+#newsletter-section .main-container .part2{
     flex: 1 1 50%;
     background-color: var(--color4);
-    padding: 40px 0px;
+    padding: 40px 60px;
 }
 
 #newsletter-section .part1 h2{
@@ -445,13 +476,14 @@ main .container{
     width: 90%;
 }
 
-.input-group {
+#newsletter-section .part1 .sub-container .input-group {
     display: flex;
     gap: 10px;
 }
 
 .input-group input {
-    flex: 1;
+    /* flex: 1 1 50%; */
+    width: 80%;
     padding: 13px 20px;
     font-size: 12px;
     border-radius: 12px;
@@ -477,6 +509,8 @@ main .container{
     border-radius: 5px;
 }
 
+
+
 #newsletter-section .part2 .container {
     display: flex;
     gap: 24px;
@@ -487,11 +521,12 @@ main .container{
     margin-top: 15px;
 }
 
+
 #newsletter-section .part2 p{
     font-size: 14px;
     color: var(--white);
     font-weight: 500;
-    margin: 88px 12px 0px 8px ;
+    margin: 88px 0px 0px 8px ;
 
 }
 
@@ -508,6 +543,7 @@ main .container{
     margin-top: 12px;
 }
 
+
 #newsletter-section .part2 .dwn-link h3{
     font-weight: 500;
     font-size: 14px;
@@ -515,6 +551,7 @@ main .container{
     margin-top: 45px;
 
 }
+
 
 #newsletter-section .part2 .dwn-link .btn{
     padding: 14px 32px;
@@ -530,6 +567,13 @@ main .container{
     gap: 10px;
     margin-top: 16px;
 }
+
+
+.dwn-link.mb{
+    display: none;
+}
+
+
 
 
 /* how to rent section  */
@@ -801,6 +845,18 @@ main .container{
 
 /* ------------------------------------------------------------ */
 
+@media (max-width:1200px){
+
+    #newsletter-section .part1 .sub-container .input-group {
+        flex-wrap: wrap;
+    }
+
+    .input-group input{
+        width:100%;
+    }
+    
+}
+
 /* Mobile view styling */
 
 
@@ -870,12 +926,13 @@ main .container{
     }
 
     main {
-        padding: 20px;
+        padding: 0px;
     }
     
     
     .booking-section {
         padding: 20px;
+        margin:0px 16px
     }
 
     .dwnld-app {
@@ -893,6 +950,7 @@ main .container{
     .bk-mobile{
         display: flex;
         flex-direction: column;
+        margin: 0px 16px;
     }
 
     .bk-btns{
@@ -983,58 +1041,242 @@ main .container{
     }
  
 
-    
-    .slider-container {
-        position: relative;
+    .slider-section{
+        height: 216px;
     }
     
-    .image-slider img {
-        width: 100%;
-    }
-    
-    .overlay {
-        bottom: 10%;
+    .overlay{
+        font-size: 9px;
+        font-weight: 400;
+        top: 78%;
         left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        padding: 10px;
+        gap: 24px;
+
     }
-    
-    .cards-container {
-        flex-direction: column;
+
+    .overlay .btn{
+        width: 81px;
+        font-size: 8px;
+        
     }
-    
+
+
+    /* popular cars section  */
+
+    .popular-cars{
+        margin:16px 0px 0px 16px;
+    }
+
+    .popular-cars .heading h1{
+        margin: 0px 0px;
+        font-size: 16px;
+        text-align: left;
+
+    }
+
+    .cards-container{
+        gap: 8px;
+    }
+
     .card {
         flex-direction: column;
-        width: 100%;
+        margin: 16px 0px;
+        /* height: 333px; */
+        height: auto;
+        width: 207px;
+        background-color: #E21E26;
+    }
+
+    .card img.c-img{
+        width: 207px; 
+        height: 127px;
+        object-fit: cover; 
     }
     
     .card-content {
-        width: 100%;
+        padding: 10px 10px;
+        width:auto;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .card-content h2 {
+        font-size: 16px;
+    }
+
+    .card-content p {
+        opacity: 70%;
     }
     
-    
-    #newsletter-section .main-container {
+    .card-content ul {
+        font-size: 10px;
+        flex-wrap: nowrap;
+        font-weight: 400;
+        margin: 11px 0 11px 0;
+        gap: 10px;
+    }
+
+    .card-content ul li{
+        display: flex;
+        flex-wrap: nowrap;
+
+    }
+
+    .card-content ul li span{
+        white-space: nowrap
+    }
+
+    .card-content .price {
         flex-direction: column;
+        gap:11px;
+        align-items: flex-start;
+        font-size: 13px;
     }
-    
-    .part1, .part2 {
-        padding: 20px;
+
+    .card-content .book-now{
+        width: 128px;
+        padding: auto 32px;
     }
+
+/* news letter  section*/
+
+#newsletter-section .main-container {
+    flex-direction: column;
+}
+
+#newsletter-section .main-container .part1  {
+    padding: 16px;
+}
+
+ #newsletter-section .main-container .part2{
+    padding: 16px 16px 16px 8px;
+    margin: 16px;
+    width: auto;
     
-    .input-group input {
-        width: 100%;
-    }
-    
-    #newsletter-section .part2 .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    #newsletter-section .part2 .app-image {
-        margin: 20px 0;
-    }
-    
+}
+
+#newsletter-section .part1 h2{
+    font-size: 16px;
+    width: 70%;
+}
+
+#newsletter-section .part1 .sub-container{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.input-group {
+    flex-direction: column;
+
+}
+
+.input-group input{
+    flex-grow: 1;
+    width: 100%;
+}
+
+#newsletter-section .part1 p{
+    font-size: 12px;
+    opacity: 80%;
+ 
+}
+
+
+#newsletter-section .part1 .btn{
+    width: 128px;
+    padding: 8px;
+   
+}
+
+
+#newsletter-section .part2 .container {
+    display: flex;
+    gap: 8px;
+    position: relative;
+    height: 350px;
+
+}
+
+#newsletter-section .part2 .app-image{
+    margin-top: 0px;
+}
+
+#newsletter-section .part2 .app-image img{
+    width: 146px;
+    height: 245px;
+}
+
+.dwn-link.dsktp{
+    display: none;
+}
+
+.dwn-link.mb {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+}
+
+
+#newsletter-section .part2 .dwn-link h3{
+    font-size: 12px;
+    margin-top: 0px;
+
+}
+
+.dwn-link.mb input, .dwn-link.mb button{
+    position: absolute;
+    left: 0px;
+    bottom: 64px;
+}
+
+#newsletter-section .part2 .dwn-link .btn{
+    padding: 8px 32px;
+}
+
+
+
+.dwn-link.mb button{
+    bottom: 4px;
+
+}
+
+#newsletter-section .part2 .dwn-link .button-group {
+    flex-direction: column;
+}
+
+#newsletter-section .part2 p{
+    font-size: 12px;
+    margin: 40px 0px 0px 0px ;
+
+}
+
+#newsletter-section .part2 .dwn-link .button-group a img{
+    height: 30px;
+    width:100px;
+}
+
+
+
+
+/* #newsletter-section .part2 .app-image img{
+    width: 100%;
+}
+
+#newsletter-section .part2 p{
+    font-size: 12px;
+
+} */
+
+
+
+
+
+
+
+
+
+
+   
     
     /* .footer {
         padding: 20px;
