@@ -10,16 +10,22 @@ document.querySelector('#close-btn').addEventListener('click', function() {
 
 // for toggling the faq question and answers
 
-document.querySelector('.plus').addEventListener('click', function() {
-    document.querySelector('.faq-answer').classList.toggle('active');
-    document.querySelector('.close').classList.toggle('active');
-    document.querySelector('.plus').classList.toggle('inactive');
-});
 
-document.querySelector('.close').addEventListener('click', function() {
-    document.querySelector('.faq-answer').classList.remove('active');
-    document.querySelector('.close').classList.remove('active');
-    document.querySelector('.plus').classList.remove('inactive');
+document.querySelectorAll('.faq-item').forEach(item => {
+    const plus = item.querySelector('.plus');
+    const close = item.querySelector('.close');
+    const answer = item.querySelector('.faq-answer');
 
+    plus.addEventListener('click', () => {
+        answer.classList.toggle('active');
+        close.classList.toggle('active');
+        plus.classList.toggle('inactive');
+    });
+
+    close.addEventListener('click', () => {
+        answer.classList.remove('active');
+        close.classList.remove('active');
+        plus.classList.remove('inactive');
+    });
 });
 
