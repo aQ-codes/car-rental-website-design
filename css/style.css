@@ -665,10 +665,8 @@ main .container{
     opacity: 80%;
 }
 
-/* faq section  */
-.container.faq{
-    /* background-color: #E21E26; */
-}
+/* frequently asked questions  */
+
 
 .faq-heading{
     font-size: 36px;
@@ -697,6 +695,7 @@ main .container{
 }
 .faq-icon {
     font-size: 20px;
+    cursor: pointer;
 }
 .faq-answer {
     margin-top: 10px;
@@ -805,9 +804,6 @@ main .container{
     color: var(--white);
 
 }
-
-
-
 
 /* ------------------------------------------------------------ */
 
@@ -918,8 +914,6 @@ main .container{
     }
 
   
-    
-    
     .booking-section {
         padding: 20px;
         margin:0px 16px
@@ -995,7 +989,6 @@ main .container{
     }
     
 
-
     .loc-time-search.mb{
         display: flex;
         flex-wrap: wrap;
@@ -1030,6 +1023,13 @@ main .container{
         justify-content: center;
     }
  
+
+    .side-button {
+        width: 40px;
+        height: 40px;
+
+    }
+    
 
     .slider-section{
         height: 216px;
@@ -1310,10 +1310,23 @@ main .container{
 }
 
 
+.faq-heading{
+    font-size: 16px;
+    text-align: left;
+    margin-left: 16px;
+}
+
+
+.faq-section {
+    margin: 16px;
+}
+
+.faq-question {
+    font-size: 13px;
+}
+
 /* footer  */
    
-
-    
     .footer-row {
         padding: 0;
         flex-direction: column;
