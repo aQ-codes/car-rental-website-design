@@ -1328,7 +1328,7 @@ main .container{
 /* footer  */
    
     .footer-row {
-        padding: 0;
+        padding: 16px;
         flex-direction: column;
         background-color: var(--color6);
         color: #000000;
