@@ -7,7 +7,7 @@
     <title>Diamond Lease</title>
     <!--Link To Css -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- link to google fontcss -->
+    <!-- link to google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -15,10 +15,11 @@
 <body>
 
     <!-- header  -->
-
     <header>
+
         <!-- container  -->
         <div class="container">
+
             <!--branding   -->
             <div class="branding">
                 <div class="main-logo">
@@ -35,8 +36,6 @@
             <!-- social-nav -- social icons and navigation  -->
             <div class="social-nav">
 
-                <button id="close-btn"><img src="icons/Close_round_light.svg" alt=""></button>
-                
                 <!-- social icons  -->
                 <div class="social-icons">
                     <a href="index.html"><img src="icons/social_media/facebook.svg" alt="facebook_icon"></a>
@@ -48,6 +47,7 @@
 
                 <!-- navigation menu -->
                 <nav>
+                    <button id="close-btn"><img src="icons/Close_round_light.svg" alt="close_btn"></button>
                     <ul>
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Offers</a></li>
@@ -55,7 +55,7 @@
                         <li><a href="#">Personal</a></li>
                         <li><a href="#">Locations</a></li>
                         <li><a href="#">Contact us</a></li>
-                        <li><a href="#"><img src="icons/notification.png" alt=""></a></li>
+                        <li class="notification"><a href="#"><img src="icons/notification.png" alt=""></a></li>
                         <li><a href="#" class="btn user-icon">
                             <img src="icons/j_letter.svg" alt="">
                             Jhon Doe
@@ -68,20 +68,19 @@
             <!-- end of social-nav  -->
         </div>
         <!-- end of container  -->
-
+         
          <!-- marquee text  -->
         <div class="marquee-container">
-            <span class="marquee">
-                Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand Sales Counters | All Rates inclusive of VAT. T&C’s apply | Follow us on Social Media for New Offers
+             <marquee behavior="" direction="left" class="marquee">Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand Sales Counters | All Rates inclusive of VAT. T&C’s apply | Follow us on Social Media for New Offers</marquee>
+                
             </span>
         </div>
          <!-- end of marquee text  -->
-    </header>
 
+    </header>
     <!-- end of header  -->
 
     <!-- main content  -->
-
     <main>
         <!-- main conatiner to wrap all sections -->
         <div class="container">
@@ -341,7 +340,7 @@
                             <div class="numbered-box">03</div>
                             <div class="content-box">
                                 <div class="icon"><img src="icons/car.svg" alt=""></div>
-                                <div class="paragraph">Make payment and book the car. Select an option to either have the car delivered to your location or pick it up directly from us..
+                                <div class="paragraph"><p>Make payment and book the car. Select an option to either have the car delivered to your location or pick it up directly from us..</p>
                                 </div>
                             </div>
                         </div>
@@ -360,26 +359,26 @@
                             <span class="place">Dubai</span>
                              
                         </li>
-                        <span class="bar"></span>
+                        <li class="bar"></li>
 
                         <li class="location-item">
                             <span class="icon"><img src="icons/location2.svg" alt=""></span> 
                             <span class="place">Abu Dhabi</span>
                         </li>
-                        <span class="bar"></span>
+                        <li class="bar"></li>
 
                         <li class="location-item">
                             <span class="icon"><img src="icons/location2.svg" alt=""></span> 
                             <span class="place">Sharjah</span>
                         </li>
-                        <span class="bar"></span>
+                        <li class="bar"></li>
 
                        
                         <li class="location-item">
                             <span class="icon"><img src="icons/location2.svg" alt=""></span>
                             <span class="place">Fujairah</span> 
                         </li>
-                        <span class="bar"></span>
+                        <li class="bar"></li>
 
                         <li class="location-item">
                             <span class="icon"><img src="icons/location2.svg" alt=""></span> 
@@ -390,9 +389,9 @@
             </section>
             <!-- end of location section  -->
         
-            <div class="container">
+            <div class="container faq">
+                <div class="faq-heading">Frequently Asked Questions</div>
                 <div class="faq-section">
-                    <div class="faq-heading">Frequently Asked Questions</div>
                     <div class="faq-item">
                         <div class="faq-question">What is my eligibility to book a car?</div>
                         <div class="faq-icon"><img src="icons/close.svg" alt=""></div>
@@ -426,11 +425,9 @@
         </div>
         
     </main>
-
     <!-- end of main content -->
 
     <!-- footer  -->
-    
     <footer class="footer">
         <div class="footer-row">
             <!-- First Part ,-->
@@ -493,7 +490,6 @@
             <p>© 2018 Diamondlease LLC - All Rights Reserved.</p>
         </div>
     </footer>
-
     <!-- end of footer  -->
 
     <script src="js/main.js"></script>
